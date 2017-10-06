@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    <h1>Click somewhere</h1>
+    <script src="./app/dist/index.min.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            document.body.appendChild(drawBall(event.clientX, event.clientY, window.innerHeight));
+        });
+    </script>
+</body>
+
+</html>
